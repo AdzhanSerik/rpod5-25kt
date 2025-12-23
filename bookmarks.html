@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SNEAKERS</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="box">
+      <!-- HEADER (ТОЧНО КАК НА ГЛАВНОЙ) -->
+      <header class="header">
+        <div class="container header-container">
+          <!-- ЛЕВАЯ ЧАСТЬ -->
+          <a href="index.html" class="logo">
+            <img src="logo.png" alt="logo" />
+
+            <div class="logo-texts">
+              <span class="logo-title">REACT SNEAKERS</span>
+              <span class="logo-subtitle">Магазин лучших кроссовок</span>
+            </div>
+          </a>
+
+          <!-- ПРАВАЯ ЧАСТЬ -->
+          <div class="header-actions">
+            <div class="header-item" id="cartBtn">
+              <img src="cart.svg" alt="" />
+              <span>1205 руб.</span>
+            </div>
+
+            <a href="bookmarks.html" class="header-item">
+              <img src="heart-outline.svg" alt="" />
+              <span>Закладки</span>
+            </a>
+
+            <a href="profile.html" class="header-item">
+              <img src="user.svg" alt="" />
+              <span>Профиль</span>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <!-- ОСНОВНОЙ КОНТЕНТ -->
+      <main>
+        <!-- ЗАГОЛОВОК СТРАНИЦЫ (КАК НА ГЛАВНОЙ) -->
+        <div class="catalog-header container">
+          <h1 class="pageName">Мои закладки</h1>
+        </div>
+
+        <!-- КАРТОЧКИ -->
+        <div class="container">
+          <div class="productCase" id="favoritesList">
+            <!-- JS СЮДА ВСТАВИТ КАРТОЧКИ -->
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

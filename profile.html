@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Профиль — React Sneakers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="box">
+      <header class="header">
+        <div class="container header-container">
+          <a href="index.html" class="logo">
+            <img src="logo.png" alt="logo" />
+
+            <div class="logo-texts">
+              <span class="logo-title">REACT SNEAKERS</span>
+              <span class="logo-subtitle">Магазин лучших кроссовок</span>
+            </div>
+          </a>
+
+          <div class="header-actions">
+            <div class="header-item" id="cartBtn">
+              <img src="cart.svg" alt="" />
+              <span>1205 руб.</span>
+            </div>
+
+            <a href="bookmarks.html" class="header-item">
+              <img src="heart-outline.svg" alt="" />
+              <span>Закладки</span>
+            </a>
+
+            <a href="profile.html" class="header-item">
+              <img src="user.svg" alt="" />
+              <span>Профиль</span>
+            </a>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="container">
+          <span class="pageName">Личный кабинет</span>
+
+          <div class="profile-box">
+            <div class="profile-left">
+              <img src="profile-photo.jpg" class="profile-avatar" />
+              <h2 class="profile-name">Имя пользователя</h2>
+              <p class="profile-email">user@gmail.com</p>
+
+              <button class="profile-btn">Редактировать профиль</button>
+              <button class="profile-btn logout" id="logoutBtn">Выйти</button>
+            </div>
+
+            <div class="profile-right">
+              <div class="profile-card">
+                <h3>Мои заказы</h3>
+                <div id="ordersList" class="orders-list"></div>
+              </div>
+
+              <div class="profile-card">
+                <h3>Адрес доставки</h3>
+                <div id="addressBlock"></div>
+              </div>
+
+              <div class="profile-card">
+                <h3>Способ оплаты</h3>
+                <div id="paymentBlock"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script>
+      const user = JSON.parse(localStorage.getItem("currentUser"));
+      if (!user) {
+        window.location.href = "index.html";
+      }
+    </script>
+  </body>
+</html>

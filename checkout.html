@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Оформление заказа — React Sneakers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="checkout.js" defer></script>
+</head>
+
+<body>
+
+<div class="box">
+ <header class="header">
+            <div class="container header-container">
+
+                    <a href="index.html" class="logo">
+                    <img src="logo.png" alt="logo">
+
+                    <div class="logo-texts">
+                        <span class="logo-title">REACT SNEAKERS</span>
+                        <span class="logo-subtitle">Магазин лучших кроссовок</span>
+                    </div>
+                    </a>
+
+
+                <div class="header-actions">
+
+                <div class="header-item" id="cartBtn">
+                    <img src="cart.svg" alt="">
+                    <span>1205 руб.</span>
+                </div>
+
+                <a href="bookmarks.html" class="header-item">
+                    <img src="heart-outline.svg" alt="">
+                    <span>Закладки</span>
+                </a>
+
+                <a href="profile.html" class="header-item">
+                    <img src="user.svg" alt="">
+                    <span>Профиль</span>
+                </a>
+
+                </div>
+
+            </div>
+    </header>
+            <!-- ФОРМА -->
+            <div class="container">
+        <h1 class="pageName">Оформление заказа</h1>
+
+        <div id="checkoutItems"></div>
+
+        <div class="checkout-summary">
+            <span>Итого:</span>
+            <b id="checkoutTotal">0 руб.</b>
+        </div>
+
+        <div class="checkout-bottom">
+            <!-- ФОРМА -->
+            <form id="checkoutForm" class="checkout-form-box">
+                <input type="text" id="name" placeholder="Имя" required>
+                <input type="tel" id="phone" placeholder="Телефон" required>
+                <input type="text" id="address" placeholder="Адрес доставки" required>
+
+                <button class="order-btn">Подтвердить заказ →</button>
+            </form>
+
+            <!-- ИЛЛЮСТРАЦИЯ -->
+            <div class="checkout-illustration">
+                <img src="illustration.png" alt="Оформление заказа">
+            </div>
+            </div>
+
+        </div>
+
+
+    </div>
+  </main>
+
+</div>
+
+</body>
+</html>
