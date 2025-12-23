@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
     CART — WORKING VERSION
  ====================== */
 
+
+
     const cartBtn = document.getElementById('cartBtn');
     const cartOverlay = document.getElementById('cartOverlay');
     const cartItems = document.getElementById('cartItems');
@@ -549,3 +551,121 @@ function closeAllOverlays() {
     autorization?.classList.remove('active');
     registration?.classList.remove('active');
 }
+
+function getProducts() {
+    return [
+        {
+            id: 9,
+            title: "Nike Blazer Mid Suede",
+            price: 12999,
+            imageUrl: "image 6.png"
+        },
+        {
+            id: 10,
+            title: "Nike Air Max 270",
+            price: 12999,
+            imageUrl: "image 7.png"
+        },
+        {
+            id: 11,
+            title: "Nike Blazer Mid Suede",
+            price: 8499,
+            imageUrl: "image 51.png"
+        },
+        {
+            id: 12,
+            title: "Puma X Aka Boku Future Rider",
+            price: 8999,
+            imageUrl: "image 8.png"
+        },
+        {
+            id: 1,
+            title: "Under Armour Curry 8",
+            price: 15199,
+            imageUrl: "image 5.png"
+        },
+        {
+            id: 2,
+            title: "Nike Kyrie 7",
+            price: 11299,
+            imageUrl: "image 5-1.png"
+        },
+        {
+            id: 3,
+            title: "Air Jordan 11",
+            price: 10799,
+            imageUrl: "image 5-2.png"
+        },
+        {
+            id: 4,
+            title: "Nike LeBron XVIII",
+            price: 16499,
+            imageUrl: "image 5-3.png"
+        },
+        {
+            id: 5,
+            title: "Nike LeBron XVIII Low",
+            price: 13999,
+            imageUrl: "image 5-4.png"
+        },
+        {
+            id: 6,
+            title: "Nike Blazer Mid Suede",
+            price: 8499,
+            imageUrl: "image 5-5.png"
+        },
+        {
+            id: 7,
+            title: "Puma X Aka Boku Future Rider",
+            price: 8999,
+            imageUrl: "image 5-6.png"
+        },
+        {
+            id: 8,
+            title: "Nike Kyrie Flytrap IV",
+            price: 11299,
+            imageUrl: "image 5-7.png"
+        }
+    ];
+}
+
+function renderCards() {
+
+    const products = getProducts()
+
+    products.forEach((sneaker) => {
+        document.querySelector('.productCase').insertAdjacentHTML("beforeend", `
+                    <div class="card">
+                        <div class="favorite">
+                            <img src="heart.svg" alt="">
+                        </div>
+
+                        <img src="${sneaker.imageUrl}" class="product-img">
+
+                        <h3 class="product-name">
+                            Мужские Кроссовки<br>
+                            ${sneaker.title}
+                        </h3>
+
+                        <div class="price-block">
+                            <div class="price-text">
+                                <span class="price-label">ЦЕНА:</span><br>
+                                <span class="price-value">${sneaker.price} тг.</span>
+                            </div>
+
+                            <button class="add-btn" data-id="9" data-title="Nike Blazer Mid Suede" data-price="12999"
+                                data-img="image 6.png">+</button>
+                        </div>
+                    </div>
+        
+        `)
+
+
+    })
+
+
+
+
+}
+
+renderCards()

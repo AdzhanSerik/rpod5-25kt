@@ -1,414 +1,90 @@
-    <!DOCTYPE html>
-    <html lang="ru">
-    <head>
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>SNEAKERS</title>
     <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
+    <script defer src="script.js"></script>
+</head>
+
+<body>
     <div class="box">
         <header class="header">
             <div class="container header-container">
 
                 <!-- ЛЕВАЯ ЧАСТЬ -->
-                    <a href="main.html" class="logo">
+                <a href="main.html" class="logo">
                     <img src="logo.png" alt="logo">
 
                     <div class="logo-texts">
                         <span class="logo-title">REACT SNEAKERS</span>
                         <span class="logo-subtitle">Магазин лучших кроссовок</span>
                     </div>
-                    </a>
+                </a>
 
 
                 <!-- ПРАВАЯ ЧАСТЬ -->
                 <div class="header-actions">
 
-                <div class="header-item" id="cartBtn">
-                    <img src="cart.svg" alt="">
-                    <span>1205 руб.</span>
-                </div>
+                    <div class="header-item" id="cartBtn">
+                        <img src="cart.svg" alt="">
+                        <span>1205 руб.</span>
+                    </div>
 
-                <a href="bookmarks.html" class="header-item">
-                    <img src="heart-outline.svg" alt="">
-                    <span>Закладки</span>
-                </a>
+                    <a href="bookmarks.html" class="header-item">
+                        <img src="heart-outline.svg" alt="">
+                        <span>Закладки</span>
+                    </a>
 
-                <div class="header-item" id="profileBtn">
-                <img src="user.svg">
-                <span>Профиль</span>
-                </div>
+                    <div class="header-item" id="profileBtn">
+                        <img src="user.svg">
+                        <span>Профиль</span>
+                    </div>
 
 
                 </div>
 
             </div>
-    </header>
+        </header>
 
 
         <main>
-        <div class="catalog-header container">
-            <h1 class="pageName">Все кроссовки</h1>
+            <div class="catalog-header container">
+                <h1 class="pageName">Все кроссовки</h1>
 
-            <div class="search-box">
-            <input type="text" id="searchInput" placeholder="Поиск...">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Поиск...">
+                </div>
             </div>
-        </div>
 
-        <div class="container">
-            <div class="productCase">
-
-            <div class="card">
-                <div class="favorite">
-                    <img src="heart.svg" alt="">
-                </div>
-
-                <img src="image 6.png" class="product-img">
-
-                <h3 class="product-name">
-                    Мужские Кроссовки<br>
-                    Nike Blazer Mid Suede
-                </h3>
-
-                <div class="price-block">
-                    <div class="price-text">
-                    <span class="price-label">ЦЕНА:</span><br>
-                    <span class="price-value">12 999 руб.</span>
-                    </div>
-
-                    <button
-                    class="add-btn"
-                    data-id="9"
-                    data-title="Nike Blazer Mid Suede"
-                    data-price="12999"
-                    data-img="image 6.png"
-                    >+</button>
-                </div>
-                </div>
-
-
-
-                <div class="card">
-                <div class="favorite">
-                    <img src="heart.svg" alt="">
-                </div>
-
-                <img src="image 7.png" class="product-img">
-
-                <h3 class="product-name">
-                    Мужские Кроссовки<br>
-                    Nike Air Max 270
-                </h3>
-
-                <div class="price-block">
-                    <div class="price-text">
-                    <span class="price-label">ЦЕНА:</span><br>
-                    <span class="price-value">12 999 руб.</span>
-                    </div>
-
-                    <button class="add-btn"
-                    data-id="10"
-                    data-title="Nike Air Max 270"
-                    data-price="12999"
-                    data-img="image 7.png">+</button>
-                </div>
-                </div>
-
-                <div class="card">
-                    <div class="favorite">
-                        <img src="heart.svg" alt="">
-                    </div>
-
-                    <img src="image 51.png" class="product-img">
-
-                    <h3 class="product-name">
-                        Мужские Кроссовки<br>
-                        Nike Blazer Mid Suede
-                    </h3>
-
-                    <div class="price-block">
-                        <div class="price-text">
-                        <span class="price-label">ЦЕНА:</span><br>
-                        <span class="price-value">8 499 руб.</span>
-                        </div>
-
-                        <button class="add-btn"
-                        data-id="11"
-                        data-title="Nike Blazer Mid Suede"
-                        data-price="8499"
-                        data-img="image 51.png">+</button>
-                    </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="favorite">
-                            <img src="heart.svg" alt="">
-                        </div>
-
-                        <img src="image 8.png" class="product-img">
-
-                        <h3 class="product-name">
-                            Кроссовки<br>
-                            Puma X Aka Boku Future Rider
-                        </h3>
-
-                        <div class="price-block">
-                            <div class="price-text">
-                            <span class="price-label">ЦЕНА:</span><br>
-                            <span class="price-value">8 999 руб.</span>
-                            </div>
-
-                            <button class="add-btn"
-                            data-id="12"
-                            data-title="Puma X Aka Boku Future Rider"
-                            data-price="8999"
-                            data-img="image 8.png">+</button>
-                        </div>
-                        </div>
-
-
-                <div class="card">
-                <div class="favorite">
-                    <img src="heart.svg" alt="">
-                </div>
-
-                <img src="image 5.png" class="product-img">
-
-                <h3 class="product-name">
-                    Мужские Кроссовки <br>
-                    Under Armour Curry 8
-                </h3>
-
-                <div class="price-block">
-                    <div class="price-text">
-                    <span class="price-label">ЦЕНА:</span>
-                    <span class="price-value">15 199 руб.</span>
-                    </div>
-
-                    <button class="add-btn"
-                    data-id="1"
-                    data-title="Under Armour Curry 8"
-                    data-price="15199"
-                    data-img="image 5.png">+</button>
-                </div>
-                </div>
-
-                <!-- 2 -->
-                <div class="card">
-                <div class="favorite">
-                    <img src="heart.svg" alt="">
-                </div>
-
-                <img src="image 5-1.png" class="product-img">
-
-                <h3 class="product-name">
-                    Мужские Кроссовки <br>
-                    Nike Kyrie 7
-                </h3>
-
-                <div class="price-block">
-                    <div class="price-text">
-                    <span class="price-label">ЦЕНА:</span>
-                    <span class="price-value">11 299 руб.</span>
-                    </div>
-
-                    <button class="add-btn"
-                    data-id="2"
-                    data-title="Nike Kyrie 7"
-                    data-price="11299"
-                    data-img="image 5-1.png">+</button>
-                </div>
-                </div>
-
-                <!-- 3 -->
-                <div class="card">
-                <div class="favorite">
-                    <img src="heart.svg" alt="">
-                </div>
-
-                <img src="image 5-2.png" class="product-img">
-
-                <h3 class="product-name">
-                    Мужские Кроссовки <br>
-                    Air Jordan 11
-                </h3>
-
-                <div class="price-block">
-                    <div class="price-text">
-                    <span class="price-label">ЦЕНА:</span>
-                    <span class="price-value">10 799 руб.</span>
-                    </div>
-
-                    <button class="add-btn"
-                    data-id="3"
-                    data-title="Air Jordan 11"
-                    data-price="10799"
-                    data-img="image 5-2.png">+</button>
-                </div>
-                </div>
-
-                <!-- 4 -->
-                <div class="card">
-                <div class="favorite">
-                    <img src="heart.svg" alt="">
-                </div>
-
-                <img src="image 5-3.png" class="product-img">
-
-                <h3 class="product-name">
-                    Мужские Кроссовки <br>
-                    Nike LeBron XVIII
-                </h3>
-
-                <div class="price-block">
-                    <div class="price-text">
-                    <span class="price-label">ЦЕНА:</span>
-                    <span class="price-value">16 499 руб.</span>
-                    </div>
-
-                    <button class="add-btn"
-                    data-id="4"
-                    data-title="Nike LeBron XVIII"
-                    data-price="16499"
-                    data-img="image 5-3.png">+</button>
-                </div>
-                </div>
-
-                <!-- 5 -->
-                <div class="card">
-                <div class="favorite">
-                    <img src="heart.svg" alt="">
-                </div>
-
-                <img src="image 5-4.png" class="product-img">
-
-                <h3 class="product-name">
-                    Мужские Кроссовки <br>
-                    Nike LeBron XVIII Low
-                </h3>
-
-                <div class="price-block">
-                    <div class="price-text">
-                    <span class="price-label">ЦЕНА:</span>
-                    <span class="price-value">13 999 руб.</span>
-                    </div>
-
-                    <button class="add-btn"
-                    data-id="5"
-                    data-title="Nike LeBron XVIII Low"
-                    data-price="13999"
-                    data-img="image 5-4.png">+</button>
-                </div>
-                </div>
-
-                <!-- 6 -->
-                <div class="card">
-                <div class="favorite">
-                    <img src="heart.svg" alt="">
-                </div>
-
-                <img src="image 5-5.png" class="product-img">
-
-                <h3 class="product-name">
-                    Мужские Кроссовки <br>
-                    Nike Blazer Mid Suede
-                </h3>
-
-                <div class="price-block">
-                    <div class="price-text">
-                    <span class="price-label">ЦЕНА:</span>
-                    <span class="price-value">8 499 руб.</span>
-                    </div>
-
-                    <button class="add-btn"
-                    data-id="6"
-                    data-title="Nike Blazer Mid Suede"
-                    data-price="8499"
-                    data-img="image 5-5.png">+</button>
-                </div>
-                </div>
-
-                <!-- 7 -->
-                <div class="card">
-                <div class="favorite">
-                    <img src="heart.svg" alt="">
-                </div>
-
-                <img src="image 5-6.png" class="product-img">
-
-                <h3 class="product-name">
-                    Кроссовки <br>
-                    Puma X Aka Boku Future Rider
-                </h3>
-
-                <div class="price-block">
-                    <div class="price-text">
-                    <span class="price-label">ЦЕНА:</span>
-                    <span class="price-value">8 999 руб.</span>
-                    </div>
-
-                    <button class="add-btn"
-                    data-id="7"
-                    data-title="Puma X Aka Boku Future Rider"
-                    data-price="8999"
-                    data-img="image 5-6.png">+</button>
-                </div>
-                </div>
-
-                <!-- 8 -->
-                <div class="card">
-                <div class="favorite">
-                    <img src="heart.svg" alt="">
-                </div>
-
-                <img src="image 5-7.png" class="product-img">
-
-                <h3 class="product-name">
-                    Мужские Кроссовки <br>
-                    Nike Kyrie Flytrap IV
-                </h3>
-
-                <div class="price-block">
-                    <div class="price-text">
-                    <span class="price-label">ЦЕНА:</span>
-                    <span class="price-value">11 299 руб.</span>
-                    </div>
-
-                    <button class="add-btn"
-                    data-id="8"
-                    data-title="Nike Kyrie Flytrap IV"
-                    data-price="11299"
-                    data-img="image 5-7.png">+</button>
-                </div>
-                </div>
-
-
-            </div> <!-- .productCase -->
-        </div> <!-- .container -->
+            <div class="container">
+                <div class="productCase"></div>
+            </div> <!-- .container -->
         </main>
 
-    
+
     </div> <!-- .box -->
 
-    <script src="script.js"></script>
-    
+
+
     </div>
     </div>
     <div class="cart-overlay" id="cartOverlay">
         <div class="cart">
 
             <div class="cart-header">
-            <h2>Корзина</h2>
-            <button class="close-cart" id="closeCart">✕</button>
+                <h2>Корзина</h2>
+                <button class="close-cart" id="closeCart">✕</button>
             </div>
 
             <!-- ПУСТО -->
             <div class="cart-empty" id="cartEmpty">
-            <img src="empty-cart.png">
-            <h3>Корзина пустая</h3>
-            <p>Добавьте хотя бы одну пару<br>кроссовок, чтобы сделать заказ.</p>
-            <button class="back-btn" id="backFromCart">← Вернуться назад</button>
+                <img src="empty-cart.png">
+                <h3>Корзина пустая</h3>
+                <p>Добавьте хотя бы одну пару<br>кроссовок, чтобы сделать заказ.</p>
+                <button class="back-btn" id="backFromCart">← Вернуться назад</button>
             </div>
 
             <!-- ТОВАРЫ -->
@@ -416,61 +92,62 @@
 
             <!-- ФУТЕР -->
             <div class="cart-footer" id="cartFooter">
-            <div class="cart-row">
-                <span>Итого:</span>
-                <b id="totalPrice">0 руб.</b>
-            </div>
+                <div class="cart-row">
+                    <span>Итого:</span>
+                    <b id="totalPrice">0 руб.</b>
+                </div>
                 <button class="order-btn" id="goCheckout">
-                Оформить заказ →
+                    Оформить заказ →
                 </button>
 
             </div>
 
         </div>
     </div>
-        </div>
+    </div>
     </div>
     <!-- AUTH OVERLAY -->
-        <!-- AUTH -->
-            <div class="autorization" id="autorization">
-                <div class="autoriz">
-                    <div class="autoriz-header">
-                    <h2>Авторизация</h2>
-                    <button class="close-autoriz" id="closeAutoriz">✕</button>
-                    </div>
+    <!-- AUTH -->
+    <div class="autorization" id="autorization">
+        <div class="autoriz">
+            <div class="autoriz-header">
+                <h2>Авторизация</h2>
+                <button class="close-autoriz" id="closeAutoriz">✕</button>
+            </div>
 
-                    <form id="loginForm">
-                    <input type="email" id="loginEmail" placeholder="Email" required>
-                    <input type="password" id="loginPassword" placeholder="Пароль" required>
-                    <button type="submit">Войти</button>
-                    </form>
+            <form id="loginForm">
+                <input type="email" id="loginEmail" placeholder="Email" required>
+                <input type="password" id="loginPassword" placeholder="Пароль" required>
+                <button type="submit">Войти</button>
+            </form>
 
-                    <p class="auth-switch">
-                    Нет аккаунта?
-                    <span class="reg-link" id="openRegister">Зарегистрироваться</span>
-                    </p>
-                </div>
-                </div>
+            <p class="auth-switch">
+                Нет аккаунта?
+                <span class="reg-link" id="openRegister">Зарегистрироваться</span>
+            </p>
+        </div>
+    </div>
 
 
-            <!-- REGISTRATION -->
-            <div class="autorization" id="registration">
-            <div class="autoriz">
-                <div class="autoriz-header">
+    <!-- REGISTRATION -->
+    <div class="autorization" id="registration">
+        <div class="autoriz">
+            <div class="autoriz-header">
                 <h2>Регистрация</h2>
                 <button class="close-autoriz" id="closeReg">✕</button>
-                </div>
+            </div>
 
-                <form id="registerForm">
+            <form id="registerForm">
                 <input type="email" id="regEmail" placeholder="Email" required>
                 <input type="password" id="regPassword" placeholder="Пароль" required>
                 <input type="password" id="checkPassword" placeholder="Введите пароль ещё раз" required>
                 <button type="submit">Зарегистрироваться</button>
-                </form>
-            </div>
-            </div>
-
+            </form>
         </div>
+    </div>
 
-    </body>
-    </html>
+    </div>
+
+</body>
+
+</html>
